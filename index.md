@@ -7,4 +7,4 @@ title: Mapa Interactivo
 
 Aquí está el mapa:
 
-<iframe src="/mapa.github.io/assets/mymap_darks.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="/mapai.github.io/assets/mymap_darks.html" width="100%" height="600" style="border:none;"></iframe>
