@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sitios culturales por tipo</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2em;
+        background-color: #f9f9f9;
+      }
+      h2 {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Distribución de sitios culturales por tipo</h2>
+    <div
+      id="grafico-tipos"
+      style="width: 100%; max-width: 800px; height: 500px"
+    ></div>
+
+    <script>
+      const data = [
+        {
+          x: [
+            "Museos",
+            "Teatros",
+            "Centros culturales",
+            "Galerías",
+            "Bibliotecas",
+          ],
+          y: [12, 7, 5, 9, 4],
+          type: "bar",
+          marker: {
+            color: "rgba(58,200,225,0.7)",
+            line: { color: "rgba(58,200,225,1.0)", width: 2 },
+          },
+        },
+      ];
+
+      const layout = {
+        title: "Cantidad de sitios culturales por tipo",
+        xaxis: { title: "Tipo de sitio" },
+        yaxis: { title: "Cantidad de lugares" },
+        margin: { t: 60, l: 60, r: 30, b: 60 },
+      };
+
+      Plotly.newPlot("grafico-tipos", data, layout);
+    </script>
+  </body>
+</html>
